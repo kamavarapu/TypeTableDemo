@@ -21,6 +21,7 @@ namespace TypeTableDemo
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new StatusTypeMap());
             base.OnModelCreating(modelBuilder);
         }
 
